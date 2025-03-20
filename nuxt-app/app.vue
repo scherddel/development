@@ -22,7 +22,7 @@ const updatedCart = await medusa.carts.lineItems.create(cart.id, {
 });
 console.log(updatedCart);
 
-const shippingOptions = medusa.shippingOptions.listCartOptions(updatedCart.id)
+const shippingOptions = medusa.shippingOptions.listCartOptions(updatedCart.cart.id)
 console.log(shippingOptions);
 </script>
 
